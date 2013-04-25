@@ -3,7 +3,18 @@
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \setlength{\textwidth}{5.1in} % set width of text portion
+\usepackage{color}
+\usepackage{amsmath}
 \usepackage{hyperref}
+\hypersetup{
+  colorlinks,
+  citecolor=violet,
+  linkcolor=red,
+  urlcolor=blue}
+
+%\addtolength{\voffset}{-10pt}
+%\addtolength{\hoffset}{-20pt}
+
 
 
 \begin{document}
@@ -14,12 +25,11 @@
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
- \moveleft.5\hoffset\centerline{\href{mailto:krudolph9@gmail.com}{krudolph9@gmail.com}}
- \moveleft.5\hoffset\centerline{(708) 620-7839}
+ \moveleft.5\hoffset\centerline{ \href{mailto:krudolph9@gmail.com}{krudolph9@gmail.com} \(\bullet\) (708) 620-7839 }
 
 
 \begin{resume}
-\section{OBJECTIVE} A passionate engineer who loves finding 
+\section{SUMMARY} A passionate engineer who loves finding 
   solutions to problems. Currently pursuing entrepreneurial 
   aspirations building out Rudy Industries. Hopes success in 
   his career will enable him to continually face new and 
@@ -28,21 +38,30 @@
 
 \section{EDUCATION} {\sl Computer Science}, College of Engineering  \\
                 University of Illinois, Urbana-Champaign,
-                August 2012
- 
+                August 2012\\
+            \begin{ncolumn}{2}
+              {\scriptsize Database Systems (CS411) }&{\scriptsize Data Mining (CS412) }\\
+              {\scriptsize Interactive Computer Graphics (CS418) }&{\scriptsize Programming Languages and Compilers (CS421) }\\
+              {\scriptsize Operating Systems Design (CS423) }& {\scriptsize Numerical Methods I \& II (Cs357 \& CS457) }\\
+              {\scriptsize Fundamental Algorithms (CS473) }&{\scriptsize Senior Project (CS492 \& CS493) }\\
+              {\scriptsize Graph Theory (Math412) }&{\scriptsize Linear Algebra (Math415) }\\
+              {\scriptsize Differential Equations (Math441) }&{\scriptsize Probability Theory (Math461) }\\
+              {\scriptsize Undergraduate Research Laboratory (CS498url) }\\
+            \end{ncolumn}
 \section{COMPUTER \\ SKILLS} 
   \begin{itemize}  
+    \small
     \itemsep -2pt %reduce space between items
-    \item {\bf Programming Languages}: Ruby, C, CoffeeScript, C++, 
-      Javascript, PHP, Bash, OCaml, MIPS Assembly, Python, Matlab, Java
-    \item {\bf Markup Languages}: HTML, \LaTeX, Markdown, Haml, YAML, JSON
-    \item {\bf Web Framworks \& Common Web APIs}: Ruby on Rails, Sinatra, NodeJS, jQuery,
-      REST, Ajax, Backbone.js, Twitter-Bootstrap
+    \item {\bf Programming Languages}: {\footnotesize Ruby, C, CoffeeScript, C++, 
+      Javascript, PHP, Bash, OCaml, MIPS Assembly, Python, Matlab, Java}.
+    \item {\bf Markup Languages}: {\footnotesize HTML, \LaTeX, Markdown, Haml, YAML, JSON}.
+    \item {\bf Web Frameworks \& Common Web APIs}: {\footnotesize Ruby on Rails, Sinatra, NodeJS, jQuery
+      REST, Ajax, Backbone.js, Twitter-Bootstrap} .
     \item {\bf Other Tools \& Notable Proficiencies}: 
-      CUDA, OpenCL, OpenGL, Git, Subversion, Mercurial, Vim, Unix-Screen, 
+      {\footnotesize CUDA, OpenGL, Git, Subversion, Mercurial, Vim, Unix-Screen, 
       SSH, able to administrate most Unix \& Linux distributions 
       (most experienced with MacOS, FreeBSD, and Ubuntu), navigate
-      Mac OS \emph{entirely} via keyboard
+      Mac OS \emph{entirely} via keyboard}.
   \end{itemize}
 
 \section{EXPERIENCE} 
@@ -53,23 +72,16 @@
     \item Founded during completion of undergrad to market computational
       services.
     \item Manage all financial and logistical aspects of the company.
-    \item Have largely been contracted as full-stack developer. Most notably, 
-      was one of 5 developers who built 
+    \item Have Largely been contracted as full-stack developer. Was one of 5 developers contracted who built
       \href{https://safelyfiled.com/home/}{SafelyFiled.com}.
     \end{itemize}
  
   {\sl Mentor} \hfill January 2013 - Present \\
     {\bf \href{https://www.bloc.io/}{Bloc.io}}, an online educational institute 
     \begin{itemize}  
-        \item Teach students programming fundamentals, specifically those
+        \item Teach programming fundamentals, specifically those
         surrounding the Ruby on Rails web framework.
      \end{itemize} 
-  {\sl Lab Aid} \hfill May 2011 - May 2012 \\
-    {\bf University of Illinois}, Urbana-Champaign, Department of Computer Science
-    \begin{itemize}
-      \itemsep -2pt %reduce space between items
-      \item Organized resources for the Senior Projects courses
-    \end{itemize} 
  
 \section{COMMUNITY \\ SERVICE}  
   {\sl Director of Technology} \hfill January 2011 - Present \\
@@ -77,19 +89,19 @@
     charitable organization helping those with brain injuries
     \begin{itemize}
       \itemsep -2pt %reduce space between items
-      \item Set up google apps and verious other cloud based collaboration tools
-      \item Built \href{http://www.muldowneyfoundation.org/}{MuldowneyFoundation.org}
+      \item Set up google apps and verious other cloud based collaboration tools.
+      \item Built \href{http://www.muldowneyfoundation.org/}{MuldowneyFoundation.org}.
       \item Lead student project team working toward
-          rehabilitation technology applications via utilizing 3D cameras and
-          framework for patient/doctor/developer collaboration purposes.
+          rehabilitation technology applications utilizing 3D cameras.
     \end{itemize}
 
 \section{EXTRA-CURRICULAR \\ ACTIVITIES}             
   \begin{itemize}
     \itemsep -2pt %reduce space between items
     \item Completion of \href{http://www.vscse.org/summerschool/2012/manycore.html}
-          {VSCSE Proven Algorithmic Techniques for Many-core Processors}
-    \item Personal website, \href{http://kurtrudolph.net/about.html}{KurtRudolph.net}
+          {VSCSE Proven Algorithmic Techniques for Many-core Processors}.
+    \item Active participant of \href{http://stackoverflow.com/users/1134742/rudolph9}{StackOverflow}.
+    \item Personal website, \href{http://kurtrudolph.net/about.html}{KurtRudolph.net} (I built the site and it links to more extra-curricular activities)
   \end{itemize}
   
  
