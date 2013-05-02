@@ -13,13 +13,13 @@
   linkcolor=red,
   urlcolor=dark-blue}
 
+\renewcommand\labelitemi{}
 %\addtolength{\voffset}{-10pt}
 %\addtolength{\hoffset}{-20pt}
 
 
 
 \begin{document}
-
 % Center the name over the entire width of resume:
  \moveleft.5\hoffset\centerline{\large\bf Kurt R. Rudolph}
 % Draw a horizontal line the whole width of resume:
@@ -30,7 +30,7 @@
 
 
 \begin{resume}
-\section{SUMMARY} A passionate engineer who loves finding 
+\section{SUMMARY} \small A passionate engineer who loves finding 
   solutions to problems. Currently pursuing entrepreneurial 
   aspirations building out Rudy Industries. Hopes success in 
   his career will enable him to continually face new and 
@@ -39,18 +39,23 @@
 \section{EXPERIENCE} 
   {\sl Software Engineer \& Founder} \hfill Dec 2010 - Present \\
   {\bf \href{http://www.rudyindustries.com/}{Rudy Industries Inc}}, 
-  \begin{itemize}  
+\vspace{-5mm}
+  \begin{itemize}
     \itemsep -2pt %reduce space between items
     \item Founded during completion of undergrad to market computational
       services.
-    \item Implemented administration panel and identified security vulnerabilities LAMP based
-      web app \href{https://safelyfiled.com/home/}{SafelyFiled.com}
-    \item Set up collaboration resources for the Illinois Sustainable Technology Center.
     \item Actively manage all financial and logistical aspects of the company.
-    \end{itemize}
+    \item Implemented administration panel and identified security vulnerabilities for LAMP based
+      web app \href{https://safelyfiled.com/home/}{SafelyFiled.com}
+    \item Configured \href{https://moodle.org/}{Moodle} based collaboration resources for the \href{http://www.istc.illinois.edu/}{Illinois Sustainable Technology Center}.
+    \item Implemented Java based mail monitoring software for \href{http://www.boldwebservices.com/}{Bold Web Services}.
+    \item Wrote \href{http://rudyindustries.github.io/jquerymobile-rails/}{jQueryMobile-Rails} and \href{http://rudyindustries.github.io/shopsense-ruby/}{shopsense-ruby} ruby gems.
+    \item Building out custom project management platform where machine learning is applied to customize user interface.
+  \end{itemize}
  
   {\sl Mentor} \hfill January 2013 - Present \\
     {\bf \href{https://www.bloc.io/}{Bloc.io}}, an online educational institute 
+\vspace{-5mm}
     \begin{itemize}  
         \item Teach programming fundamentals, specifically those
         surrounding the Ruby on Rails web framework.
@@ -60,6 +65,7 @@
   {\sl Director of Technology} \hfill January 2011 - Present \\
   {\bf \href{http://www.muldowneyfoundation.org/}{Muldowney Foundation}}, 
     charitable organization helping those with brain injuries
+\vspace{-5mm}
     \begin{itemize}
       \itemsep -2pt %reduce space between items
       \item Set up google apps and verious other cloud based collaboration tools.
@@ -69,24 +75,26 @@
     \end{itemize}
 
 \section{COMPUTER \\ SKILLS} 
-    {\sl Programming Languages}: {\footnotesize Ruby, C, CoffeeScript, C++, 
+\begin{tabular}{*{1}{p{3.6cm}p{8.6cm}}}
+    {\sl Programming Languages}: & @{\footnotesize Ruby, C, CoffeeScript, C++, 
       Javascript, PHP, Bash, OCaml, MIPS Assembly, Python, Matlab, Java}.\\
-    {\sl Markup Languages}: {\footnotesize HTML, \LaTeX, Markdown, Haml, YAML, JSON}.\\
-    {\sl Web Frameworks \& Common WebAPIs}: 
+    {\sl Markup Languages}: & {\footnotesize HTML, \LaTeX, Markdown, Haml, YAML, JSON}.\\
+    {\sl Web Frameworks \& Common WebAPIs}: &
       {\footnotesize Ruby on Rails, Sinatra, Apache, NodeJS, jQuery, 
       REST, Ajax, Backbone.js, Twitter-Bootstrap}.\\
-    {\sl Other Tools \& Notable Proficiencies}: 
+    {\sl Other Tools \& Notable Proficiencies}: &
       {\footnotesize CUDA, OpenGL, Git, Subversion, Vim, Unix-Screen, 
       SSH, able to administrate most Unix \& Linux distributions 
       (most experienced with MacOS, FreeBSD, and Ubuntu), navigate
       Mac OS \emph{entirely} via keyboard, SQL (largely used MySQL), DynamoDB}.\\
+\end{tabular}
 
 
 \section{EXTRA-CURRICULAR \\ ACTIVITIES}             
     Completion of \href{http://www.vscse.org/summerschool/2012/manycore.html}
           {VSCSE Proven Algorithmic Techniques for Many-core Processors}.\\
     Active participant of \href{http://stackoverflow.com/users/1134742/rudolph9}{StackOverflow}.\\
-    Personal website, \href{http://kurtrudolph.net/about.html}{KurtRudolph.net} (please see site more extra-curricular activities)\\
+    Personal website, \href{http://kurtrudolph.net/about.html}{KurtRudolph.net} (please see site more extra-curricular activities).\\
 
 \section{EDUCATION} {\sl Computer Science}, College of Engineering  \\
                 University of Illinois at Urbana-Champaign,
